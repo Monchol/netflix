@@ -1,0 +1,199 @@
+.netflix-logo-header {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.topic-movies {
+    color: #fff;
+    text-shadow: 2px 2px 20px #222222;
+    font-size: 35px;
+    font-weight:600;
+    position: relative;
+    z-index: 1;
+}
+
+.netflix-logo-header-img {
+    width: 92px;
+}
+.navbar-netflix {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.753), rgba(0, 0, 0, 0)) !important;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    padding: 6px 27px;
+    font-size: 11px;
+    z-index: 10000000000000000;
+}
+
+footer {
+    padding: 12px;
+}
+
+.movies {
+    padding: 0 50px;
+    transform: translateY(-47px);
+    height: 300px;
+}
+
+
+.card-netflix:first-child {
+    z-index: 100px;
+}
+
+.card-netflix {
+    z-index: 50;
+    height: 100px;
+    transform: translateY(10px);
+}
+
+.card-netflix:hover {
+    transition: 500ms;
+    transform: scale(1.2);
+    z-index: 10000000;
+    transition-delay: var(--animation-delay);
+}
+
+.cards-slider {
+    display: flex;
+    gap: 20px;
+    position: relative;
+    z-index: 25;
+    transform: translateY(-100px);
+
+}
+
+.hero-movie-description {
+    font-weight: 400;
+    font-size: 15px;
+    text-shadow: 2px 2px 20px #5c4e1b;
+}
+
+.hero-movie {
+    background-image: url('../img/breaking_bad.jpg');
+    background-size: cover;
+    background-position: 50%;
+    height: 50vh;
+    padding: 0 40px;
+}
+
+
+.bi-more-info {
+    color: #fff;
+    width: 20px;
+}
+
+.serie-logo {
+    width: 300px;
+}
+
+.description {
+    height: 100%;
+    padding-bottom: 75px;
+    font-size: 14px;
+    font-weight: 600;
+    color:#fff;
+    gap: 10px;
+}
+
+.bi-icon-button {
+    transform: rotate(90deg);
+    color: #000;
+    width: 20px;
+}
+
+footer {
+    padding: 0 50px;
+}
+
+@media screen and (min-width:1024px) {
+    .hero-movie {
+        height: 90vh;
+        padding: 50px;
+    }
+    .serie-logo {
+        width: 400px;
+    }
+    .navbar-netflix {
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.753), rgba(0, 0, 0, 0)) !important;
+        position: fixed;
+        width: 100vw;
+        top: 0;
+        padding: 10px 50px;
+        font-size: 15px;
+        font-weight: 700;
+    }
+
+    .description {
+        padding-bottom: 50px;
+        font-size: 20px;
+    }
+    .btn-netflix {
+        transform: scale(1.5) translateX(25px);
+    }
+    .buttons {
+        display: flex;
+        gap: 80px;
+    }
+    .hero-movie-description {
+    font-size: 25px;
+    }
+
+}
+
+@media screen and (max-width:600px) {
+    .topic-movies {
+        font-size: 1.2rem;
+        margin-bottom: 19px;
+    }
+}
+
+.netflix-logo-bottom {
+    width: 92px;
+}
+
+.navbar-item {
+    margin: 10px 30px;
+}
+
+.navbar-nav .me-auto {
+    gap: 20px;
+}
+
+.bi-search {
+    color: #fff;
+    width: 25px;
+    margin: 10px;
+}
+
+.bi-bell-fill {
+    color: #fff;
+    width: 25px;
+    margin: 10px;
+}
+
+.bi-triangle-fill {
+    color: #fff;
+    width: 15px;
+    margin: 5px;
+    transform: rotate(180deg);
+}
+
+.profile-photo {
+    height: 100%;
+}
+
+.bi-person-circle {
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+}
+
+.no-display {
+    display: none !important;
+}

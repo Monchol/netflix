@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="card-netflix">
+        <div class="face face1">
+            <div class="netflix-logo-img-box">
+                <img class="netflix-serie-img" src="img/gumball.webp" alt="html" />
+            </div>
+        </div>
+        <div class="face face2">
+            <div class="content-card">
+                <div class="buttons-card">
+                    <div class="buttons-list">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-play-circle-fill"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-plus-circle"
+                            viewBox="0 0 16 16">
+                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                            <path
+                                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4" />
+                        </svg>
+                        <img class="bi-like-circle" src="img/vectorpaint.svg" alt="">
+                    </div>
+                    <div class="buttons-list2">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-down-circle" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z"/>
+                          </svg>
+                    </div>
+                </div>
+                <div class="tech-info">
+                    <p class="age tech-info-item">7+</p>
+                    <p class="season tech-info-item">2 Seasons</p>
+                    <p class="quality tech-info-item">HD</p>
+                </div>
+                <div class="topics">
+                    <ul class="topics-list">
+                        <li class="topic-item">Quirky</li>
+                        <li class="topic-item dot-box"><p class="dot">.</p></li>
+                        <li class="topic-item">Kids</li>
+                        <li class="topic-item dot-box"><p class="dot">.</p></li>
+                        <li class="topic-item">Animals</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <img src="img/image.png" width="200px" alt="">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            background: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: consolas;
+        }
+
+        .netflix-serie-img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .card-netflix {
+            position: relative;
+            cursor: pointer;
+        }
+
+        .tech-info {
+            width: 100%;
+            display: flex;
+            color: #999;
+            align-items: center;
+            gap: 10px;
+        }
+        .tech-info-item {
+            margin: 10px 0;
+        }
+
+        .dot-box {
+            display: flex;
+            align-items: center;
+            height: 12px;
+        }
+
+        .dot {
+            color: #999;
+            font-weight: 900;
+            margin: 0;
+            padding: 0;
+        }
+
+        .age {
+            padding: 2px 6px;
+            outline: 2px solid #999;
+        }
+
+        .quality {
+            font-family:Arial, Helvetica, sans-serif;
+            font-size: 12px;
+            font-weight: 700;
+            padding: 1px 7px;
+            outline: 1px solid #999;
+            border-radius: 2px;
+        }
+
+        .topics {
+            width: 100%;
+        }
+
+        .topics-list {
+            display: flex;
+            color: #fff;
+            gap: 10px;
+            margin: 2px;
+            padding: 0;
+            list-style: none;
+        }
+
+        .card-netflix .face {
+            width: 300px;
+            height: 167px;
+            transition: 0.5s;
+        }
+
+        .content-card {
+            width: 100%;
+            height: 100%;
+        }
+
+        .buttons-card {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .card-netflix .face.face1 {
+            position: relative;
+            background: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1;
+            transform: translateY(100px);
+        }
+
+        .card-netflix:hover .face.face1 {
+            transform: translateY(0px);
+        }
+
+        .card-netflix .face.face2 {
+            position: relative;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            box-sizing: border-box;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+            transform: translateY(-70px);
+        }
+
+        .face2 {
+            height: 140px !important;
+            background-color: #181818 !important;
+        }
+
+        .bi-play-circle-fill {
+            color: #fff;
+            width: 30px;
+        }
+
+        .bi-like-circle {
+            color: #fff !important;
+            width: 30px;
+            height: 30px;
+        }
+
+        .bi-plus-circle {
+            color: #fff;
+            width: 30px;
+        }
+
+        .bi-arrow-down-circle {
+            width: 30px;
+            color:#fff;
+        }
+
+        .card-netflix:hover .face.face2 {
+            transform: translateY(0px);
+        }
+
+        .card-netflix .face.face2 .contennetflix-logo-img-box p {
+            margin: 0;
+            padding: 0;
+        }
+
+        .card-netflix .face.face2 .netflix-logo-img-box a {
+            margin: 25px 80px 0;
+            display: inline-block;
+            text-decoration: none;
+            font-weight: 900;
+            color: #333;
+            padding: 5px;
+            border: 1px solid #333;
+        }
+
+        .card-netflix .face.face2 .netflix-logo-img-box a:hover {
+            background: #333;
+            color: #fff;
+        }
+
+        .card-netflix .face.face1 .netflix-logo-img-box {
+            opacity: 1;
+            transition: 0.5s;
+        }
+
+        .card-netflix:hover .face.face1 .netflix-logo-img-box {
+            opacity: 1;
+        }
+
+        .card-netflix .face.face1 .netflix-logo-img-box h3 {
+            margin: 10px 0 0;
+            padding: 0;
+            color: #fff;
+            text-align: center;
+            font-size: 1.5em;
+        }
+    </style>
+</body>
+
+</html>
